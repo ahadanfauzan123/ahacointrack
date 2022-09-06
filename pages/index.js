@@ -1,5 +1,7 @@
 import Head from 'next/head'
+import TopTable from '../components/cmc-table/TopTenTable'
 import Header from '../components/Header'
+import Trending from '../components/Trending'
 
 const styles = {
   wrapper: 'w-screen h-screen flex flex-col',
@@ -17,7 +19,9 @@ export default function Home() {
       {/* header */}
       <Header />
       {/* trendings */}
+      <Trending /> 
       {/* CNC table */}
+      <TopTable />
     </div>
   )
 }
